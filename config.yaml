@@ -1,0 +1,47 @@
+laser_params:
+  energy_J: 1
+  polarisation: !!python/tuple
+  - 1
+  - 0
+  wavelength: 8.0e-07
+
+
+measurement_params:
+  FROG_filepath: "https://github.com/user-attachments/files/17414077/df_intensity_spectral_v3.csv"
+  INSIGHT_filepath: "C:\\Users\\skq54543\\OneDrive - Science and Technology Facilities Council\\EPAC Simulation\\INSIGHT measurements\\Exyt_0_ta2_test_4_with_phase.h5"
+  NF_filepath: "C:\\Users\\skq54543\\OneDrive - Science and Technology Facilities Council\\EPAC
+    Simulation\\transverse_profile_test.png"
+  pixel_size: 2.0e-07 # need to provide camera pixel size for NF image
+  is_FROG_measurement: False # specify which measurements are being used to define the pulse
+  is_INSIGHT: False
+  is_NF_measurement: False
+
+
+analytic_params:
+  beam_waist: 5.0e-06
+  cep_phase: 0
+  coherence_factor: 0
+  fod: 0 #8.0e-55
+  gdd: 0 #2.1e-26
+  pulse_duration: 40e-15 # 40fs
+  t_peak: 0.0
+  tod: 0 #-2.0e-41
+  zernike: True
+  zernike_dict: # put none if no Zernike aberrations 
+    "1,3": 0
+    "2,2": 0
+
+grid_params:
+  no_time_steps: 500
+  no_spatial_steps: 500 # in radial direction
+  n_azimuthal_modes: 3
+  n_theta_evals: 5
+  num_points: !!python/tuple
+  - 500
+  - 500
+
+
+figure_params:
+  dropout_figs: True
+
+
